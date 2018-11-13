@@ -1,5 +1,15 @@
 extends layout
 
+mixin lorem(head)
+    h3= head
+    p Bienvenue dans mon travail de réfrigérateur
+
 block content
-  h1= title
-  p Welcome to #{title}
+  #banner.page-header
+    br
+    .row
+        .col-md-6.col-sm-12
+            h1= title
+    .row
+        .col-sm-12
+            +lorem('Hello Khyati')
